@@ -12,7 +12,7 @@ public class OgoogleTest {
 
 
     public void gTest(){
-         driver =new ChromeDriver();
+        driver =new ChromeDriver();
         driver.get("https://www.google.com/");
         driver.findElement(By.name("q")).sendKeys("colombo"+ Keys.ENTER);
         driver.quit();

@@ -61,12 +61,5 @@ public class linkExample {
         List<WebElement>countlolink=layouteliment.findElements(By.tagName("a"));
         System.out.printf("cololink:"+countlolink.size());
 
-
-
-
-
-
-
-
     }
 }
