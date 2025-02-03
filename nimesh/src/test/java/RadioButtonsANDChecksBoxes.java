@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class RadioButtonsANDChecksBoxes {
 
     WebDriver driver;
@@ -57,10 +59,24 @@ public class RadioButtonsANDChecksBoxes {
     }
     @Test
     public void checksTest(){
+        //select wanted checkbox and verifing those checkboxs selected status.
+        driver.get("https://www.leafground.com/checkbox.xhtml;jsessionid=node0w3j34xrwvunpdtp6njk9z5ed8608687.node0");
+
+        List<WebElement> checkboxList= driver.findElements(By.xpath("//table[@id='j_idt87:basic']//label"));
+        for (WebElement element:checkboxList){
+            if (!(element.getText().equals("others"))){
+
+        }
+
 
 
     }
+        for (int i=1; i<=checkboxList.size(); i++){
+            boolean checkBoxStatus=driver.findElement(By.xpath("(//table[@id='j_idt87:basic']//input)["+ i +"]")).isSelected();
+            System.out.println("Chechbox"+i+"selected status is:"+checkBoxStatus);
+        }
 
 
 
-}
+
+}}
