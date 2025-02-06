@@ -17,14 +17,14 @@ public class Alert {
     @Test
     public void AlertTest(){
         //alert simple dialog
-        //WebElement alertBox=driver.findElement(By.id("j_idt88:j_idt91"));
-        //alertBox.click();
-        //driver.switchTo().alert().accept();
+        WebElement alertBox=driver.findElement(By.id("j_idt88:j_idt91"));
+        alertBox.click();
+        driver.switchTo().alert().accept();
 
         //alert comfirm dialog
-       // WebElement comfirmBox=driver.findElement(By.id("j_idt88:j_idt93"));
-        //comfirmBox.click();
-        //driver.switchTo().alert().dismiss();
+        WebElement comfirmBox=driver.findElement(By.id("j_idt88:j_idt93"));
+        comfirmBox.click();
+        driver.switchTo().alert().dismiss();
 
         //alert prompt dialog
         WebElement promptBOX=driver.findElement(By.id("j_idt88:j_idt104"));
