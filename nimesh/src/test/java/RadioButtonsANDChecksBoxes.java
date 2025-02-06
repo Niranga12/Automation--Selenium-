@@ -75,6 +75,30 @@ public class RadioButtonsANDChecksBoxes {
             boolean checkBoxStatus=driver.findElement(By.xpath("(//table[@id='j_idt87:basic']//input)["+ i +"]")).isSelected();
             System.out.println("Chechbox"+i+"selected status is:"+checkBoxStatus);
         }
+        driver.quit();
+        public static void main(String[] args) {
+
+            String str = "ABCD";
+            String res = "";
+            //length & chartAt
+
+            //int len=str.length();
+            //for (int i=len-1;i>=0;i--){
+            //   res=res+str.charAt(i);
+            // }
+            //System.out.println(res);
+
+            //charatorArray
+            char[] arr = str.toCharArray();
+            int len = arr.length;
+
+            for (int i = len - 1; i >= 0; i--) {
+                res = res + arr[i];
+
+
+            }
+            System.out.println(res);
+        }
 
 
 
